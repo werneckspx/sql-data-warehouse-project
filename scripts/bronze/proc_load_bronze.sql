@@ -108,7 +108,7 @@ BEGIN
 		RAISE NOTICE 'Load duration: % segundos', EXTRACT(EPOCH FROM end_time - start_time);
 
 		bronze_end_time := NOW();
-		RAISE NOTICE 'Load Bronze duration: % segundos', EXTRACT(EPOCH FROM end_time - start_time);
+		RAISE NOTICE 'Load Bronze duration: % segundos', EXTRACT(EPOCH FROM bronze_end_time - bronze_start_time);
 
 EXCEPTION
 	WHEN OTHERS THEN
