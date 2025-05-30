@@ -46,7 +46,7 @@ Este documento descreve as convenções de nomenclatura utilizadas para esquemas
 
 | Padrão    | Significado         | Exemplo(s)                                 |
 | --------- | ------------------- | ------------------------------------------ |
-| `dim_`    | Tabela de dimensão  | `dim_customer`, `dim_product`              |
+| `dim_`    | Tabela de dimensão  | `dim_customers`, `dim_products`              |
 | `fact_`   | Tabela de fato      | `fact_sales`                               |
 
 ---
