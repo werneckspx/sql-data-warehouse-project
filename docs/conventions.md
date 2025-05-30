@@ -1,7 +1,3 @@
-Claro! Aqui está a tradução completa para o português:
-
----
-
 # **Convenções de Nomenclatura**
 
 Este documento descreve as convenções de nomenclatura utilizadas para esquemas, tabelas, views, colunas e outros objetos no data warehouse.
