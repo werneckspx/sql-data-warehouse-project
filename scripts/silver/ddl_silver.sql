@@ -1,3 +1,22 @@
+-- ============================================================================
+-- Script: ddl_silver.sql
+-- Descrição:
+--   Este script contém as definições das tabelas da camada Silver do Data Warehouse.
+--   As tabelas armazenam dados tratados e enriquecidos, prontos para análises e consumo
+--   por camadas superiores ou relatórios.
+--
+-- Tabelas criadas:
+--   - silver.crm_cust_info: Informações tratadas de clientes do CRM
+--   - silver.crm_prd_info: Informações tratadas de produtos do CRM
+--   - silver.crm_sales_details: Detalhes de vendas do CRM tratados
+--   - silver.erp_loc_a101: Localizações do ERP tratadas
+--   - silver.erp_cust_az12: Clientes do ERP tratados
+--   - silver.erp_px_cat_g1v2: Categorias de produtos do ERP tratadas
+--
+-- ============================================================================
+
+
+
 CREATE TABLE silver.crm_cust_info(
 	cst_id INT,
 	cst_key VARCHAR(50),

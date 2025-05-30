@@ -1,3 +1,20 @@
+-- ============================================================================
+-- Script: init_database_sql
+-- Descrição:
+--   Este script realiza a criação inicial do banco de dados e dos schemas
+--   utilizados no Data Warehouse, organizando as camadas Bronze, Silver e Gold.
+--
+-- Objetivo:
+--   Estruturar o ambiente de dados, criando o banco principal e os schemas
+--   necessários para o fluxo de ingestão, tratamento e disponibilização dos dados.
+--
+-- Objetos criados:
+--   - Banco de dados: DataWareHouse
+--   - Schemas: bronze, silver, gold
+--
+-- ============================================================================
+
+
 CREATE DATABASE DataWareHouse;
 
 CREATE SCHEMA bronze;

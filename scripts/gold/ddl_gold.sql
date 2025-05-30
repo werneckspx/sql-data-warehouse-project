@@ -1,3 +1,22 @@
+-- ============================================================================
+-- Script: ddl_gold.sql
+-- Descrição:
+--   Este script contém as definições das views da camada Gold do Data Warehouse.
+--   As views consolidam, integram e organizam os dados tratados da camada Silver,
+--   estruturando-os em dimensões e fatos para facilitar análises e relatórios.
+--
+-- Objetivo:
+--   Disponibilizar dados prontos para consumo analítico, BI e dashboards,
+--   garantindo integridade, padronização e performance nas consultas.
+--
+-- Views criadas:
+--   - gold.dim_customers: Dimensão de clientes integrando dados CRM e ERP
+--   - gold.dim_products: Dimensão de produtos enriquecida com categorias do ERP
+--   - gold.fact_sales: Fato de vendas integrando produtos e clientes
+--
+-- ============================================================================
+
+
 CREATE VIEW gold.dim_customers AS
 SELECT
 	ROW_NUMBER() OVER (ORDER BY cst_id) AS customer_key,

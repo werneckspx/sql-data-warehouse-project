@@ -1,3 +1,25 @@
+-- ============================================================================
+-- Script: quality_silver_checks.sql
+-- Descrição:
+--   Este script executa verificações de qualidade nos dados da camada Silver do Data Warehouse.
+--   Inclui checagens de duplicidade, valores nulos, padronização, consistência de datas
+--   e integridade dos principais campos das tabelas Silver.
+--
+-- Objetivo:
+--   Garantir a qualidade, padronização e integridade dos dados tratados,
+--   facilitando a identificação de possíveis falhas ou inconsistências antes do consumo analítico.
+--
+-- Tabelas verificadas:
+--   - silver.crm_cust_info
+--   - silver.crm_prd_info
+--   - silver.crm_sales_details
+--   - silver.erp_cust_az12
+--   - silver.erp_loc_a101
+--   - silver.erp_px_cat_g1v2
+--
+-- ============================================================================
+
+
 -- Check for NULLs or Duplicates in Primary Key
 -- Expectation: No Results
 SELECT 

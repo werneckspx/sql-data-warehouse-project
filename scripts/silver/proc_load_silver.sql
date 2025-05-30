@@ -1,3 +1,25 @@
+-- ============================================================================
+-- Script: proc_load_silver.sql
+-- Descrição:
+--   Este script define a procedure silver.load_silver, responsável por transformar
+--   e carregar dados tratados das tabelas Bronze para as tabelas Silver do Data Warehouse.
+--   Inclui limpeza, padronização, enriquecimento e controle de execução das cargas.
+--
+-- Objetivo:
+--   Automatizar o processo de transformação e ingestão dos dados tratados para a camada Silver,
+--   garantindo qualidade, padronização e atualização dos dados para análises e relatórios.
+--
+-- Tabelas envolvidas:
+--   - silver.crm_cust_info
+--   - silver.crm_prd_info
+--   - silver.crm_sales_details
+--   - silver.erp_cust_az12
+--   - silver.erp_loc_a101
+--   - silver.erp_px_cat_g1v2
+--
+-- ============================================================================
+
+
 CREATE OR REPLACE PROCEDURE silver.load_silver()
 LANGUAGE plpgsql
 AS $$

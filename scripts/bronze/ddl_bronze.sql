@@ -1,3 +1,21 @@
+-- ============================================================================
+-- Script: ddl_bronze.sql
+-- Descrição: 
+--   Este script contém as definições das tabelas da camada Bronze do Data Warehouse.
+--   As tabelas armazenam dados brutos provenientes de diferentes fontes, como CRM e ERP,
+--   servindo como base para as próximas camadas do processo de ETL.
+--
+-- Tabelas criadas:
+--   - bronze.crm_cust_info: Informações de clientes do CRM
+--   - bronze.crm_prd_info: Informações de produtos do CRM
+--   - bronze.crm_sales_details: Detalhes de vendas do CRM
+--   - bronze.erp_loc_a101: Localizações do ERP
+--   - bronze.erp_cust_az12: Clientes do ERP
+--   - bronze.erp_px_cat_g1v2: Categorias de produtos do ERP
+--
+-- ============================================================================
+
+
 CREATE TABLE bronze.crm_cust_info(
 	cst_id INT,
 	cst_key VARCHAR(50),
