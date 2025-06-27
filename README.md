@@ -204,7 +204,7 @@ Olá! Meu nome é Felipe Werneck e sou um estudante de **engenharia da computaç
 
 Desenvolvi este projeto como parte do meu portfólio com o objetivo de:
 
-* Aprimorar habilidades práticas em **modelagem de dados**, **SQL** e **data warehouse**;
+* Aprimorar habilidades práticas em **modelagem de dados**, **SQL**, **data warehouse** e **dashboard**;
 * Demonstrar o uso da **Arquitetura Medallion** em um contexto realista;
 * Praticar boas práticas de versionamento, organização e documentação de projetos de dados.
 
