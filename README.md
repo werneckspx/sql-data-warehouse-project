@@ -105,7 +105,7 @@ Após a construção da arquitetura de Data Warehouse e a organização dos dado
 
 ### 🖼️ Captura de Tela do Dashboard
 
-![Dashboard Streamlit](assets/dashboard_preview.png) <!-- substitua com o caminho correto da imagem no repositório -->
+![Dashboard Streamlit](imgs/dashboard.png) 
 
 ### 🚀 Execução Local
 
