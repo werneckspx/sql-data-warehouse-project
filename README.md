@@ -118,7 +118,8 @@ sql-data-warehouse-project/
 │       ├── cust_az12.csv
 │       ├── loc_a101.csv
 │       └── px_cat_g1v2.csv
-│
+├── notebooks/
+│   ├── testes_visualization.ipynb
 ├── scripts/
 │   ├── init_database_sql
 │   ├── bronze/
@@ -129,7 +130,9 @@ sql-data-warehouse-project/
 │   │   └── proc_load_silver.sql
 │   └── gold/
 │       └── ddl_gold.sql
-│
+├── src/
+│   ├── app.py
+│   └── data_loader.py 
 ├── test/
 │   ├── quality_silver_checks.sql
 │   └── quality_gold_checks.sql
@@ -165,5 +168,3 @@ Desenvolvi este projeto como parte do meu portfólio com o objetivo de:
 * [E-mail](mailto:felipwerneck@gmail.com)
 
 Agradeço pela visita ao projeto! 😊
-
-> 🔍 Este projeto foi desenvolvido com base em um estudo guiado pelo tutorial de [Data with Baraa](https://www.youtube.com/@DataWithBaraa).
