@@ -190,6 +190,8 @@ sql-data-warehouse-project/
   - **bronze/**: Scripts para camada Bronze (dados brutos).
   - **silver/**: Scripts para camada Silver (dados tratados).
   - **gold/**: Scripts para camada Gold (views analíticas).
+- **notebooks**: Testes de visualização. 
+- **src/**: Códigos em Python.
 - **test/**: Scripts de checagem e validação da qualidade dos dados.
 - **README.md**: Documentação do projeto.
 - **.gitignore**: Arquivos e pastas ignorados pelo controle de versão.
