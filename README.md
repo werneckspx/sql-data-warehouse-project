@@ -79,6 +79,45 @@ Os dados da Gold Layer podem ser consumidos por diferentes aplicações e usuár
 * **Consultas Ad-Hoc:** SQL queries diretas em views
 * **Machine Learning:** Dados prontos para pipelines preditivos
 
+Ótimo, Felipe! Seu README já está super bem estruturado e profissional. Vamos agora adicionar uma nova seção clara e objetiva destacando a **camada de visualização (dashboard)**. Essa adição será importante para demonstrar seu domínio completo do ciclo de dados — do raw ao insight.
+
+Aqui está a sugestão para você **copiar e colar ao final do seu README**, **antes da seção "Sobre Mim"**:
+
+---
+
+### 📈 6. Visualização e Análise com Python
+
+Após a construção da arquitetura de Data Warehouse e a organização dos dados até a camada Gold, desenvolvi um **dashboard interativo** com o objetivo de transformar os dados consolidados em **insights visuais e analíticos**.
+
+### ⚙️ Tecnologias Utilizadas
+
+* **Python** – Linguagem principal para análise e construção da aplicação
+* **Jupyter Notebook** – Ambiente para testes e protótipos de visualização
+* **Plotly** – Criação de gráficos dinâmicos e interativos
+* **Streamlit** – Framework leve para construção e deploy do dashboard
+
+### 📊 Funcionalidades do Dashboard
+
+* **KPIs principais:** Total de Vendas, Lucro Total, Clientes e Pedidos Únicos
+* **Lucro por Mês:** Análise temporal do desempenho financeiro
+* **Produtos Mais Lucrativos:** Ranking dos produtos com maior retorno
+* **Lucro por País:** Distribuição geográfica dos lucros
+
+### 🖼️ Captura de Tela do Dashboard
+
+![Dashboard Streamlit](assets/dashboard_preview.png) <!-- substitua com o caminho correto da imagem no repositório -->
+
+### 🚀 Execução Local
+
+Para executar o dashboard localmente:
+
+```bash
+cd src/
+streamlit run app.py
+```
+
+> Esta etapa marca a **complementação do projeto**, onde dados tratados e modelados são traduzidos em visualizações claras para suporte à decisão, destacando a aplicação.
+
 ---
 
 ### 🎯 Benefícios da Arquitetura
@@ -96,13 +135,19 @@ Para executar e testar este projeto de Data Warehouse, são necessários os segu
 
 ### Banco de Dados
 
-- **PostgreSQL** (utilizado 17)
-  - Extensões padrão habilitadas (ex: `plpgsql`)
+* **PostgreSQL** (utilizado 17)
+
+  * Extensões padrão habilitadas (ex: `plpgsql`)
 
 ### Ferramentas
 
-- **psql** (cliente de linha de comando do PostgreSQL)  
+* **psql** – Cliente de linha de comando do PostgreSQL
   Ou qualquer ferramenta de administração SQL compatível (utilizado pgAdmin).
+* **Python 3.13+** – Linguagem usada para construção da visualização e manipulação de dados.
+* **Jupyter Notebook** – Utilizado para testes e validação das visualizações (opcional).
+* **Streamlit** – Aplicação web para construir dashboards interativos.
+* **Plotly** – Biblioteca para criação de gráficos interativos.
+* **Pandas / NumPy** – Manipulação e análise de dados.
 
 ### Estrutura de Diretórios
 
@@ -136,9 +181,8 @@ sql-data-warehouse-project/
 ├── test/
 │   ├── quality_silver_checks.sql
 │   └── quality_gold_checks.sql
-│
-├── README.md
-└── .gitignore
+│ 
+└── README
 ```
 
 - **datasets/**: Contém os arquivos CSV de entrada, separados por origem (CRM e ERP).
